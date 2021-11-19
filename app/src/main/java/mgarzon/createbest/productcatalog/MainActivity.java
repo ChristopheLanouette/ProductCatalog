@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name = editTextName.getText().toString().trim();
-                double price = Double.parseDouble(String.valueOf(editTextPrice.getText().toString()));
+                double price = Double.parseDouble(editTextPrice.getText().toString());
                 if (!TextUtils.isEmpty(name)) {
                     updateProduct(productId, name, price);
                     b.dismiss();
